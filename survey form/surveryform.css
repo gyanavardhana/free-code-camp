@@ -1,0 +1,69 @@
+body{
+  background-color: #0a0a23;
+  color: white;
+  margin: 0;
+  font-size: 1.5em;
+}
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+label{
+  display: block;
+  margin: 1em;
+
+  
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  font: 
+}
+input, textarea {
+  background-color: #3b3b4f;
+  border: 0.5px solid white;
+  color: #ffffff;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+.bob2,.bob3{
+  margin: 1 0 0 0;
+  width: 40%;
+  min-height: 0em;
+}
+.bob4,.bob5{
+  width: 40%;
+  min-height: 1.5em;
+}
+.bob6,.bob7{
+  margin: 1 0 0 0;
+  width: 80%;
+}
+.bob8,.bob9{
+  width: 40%;
+  min-height: 1.5em;
+}
+
+textarea{
+  margin: 1em 1em 4em ;
+}
+.sub{
+  display: block;
+  width: 60%;
+  margin: 0.5em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+  
+}

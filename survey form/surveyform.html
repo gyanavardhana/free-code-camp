@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">This is survey form which collects the details of the water facility.</p>
+<form id="survey-form">
+  <fieldset class="bob1">
+  <label id="name-label"> Enter your name: <input id="name" required type="text" placeholder="gyanavardhan"></label>
+ <label id="email-label"> Enter your email:  <input id="email" required type="email" placeholder="abcdef@gmail.com">     </label>
+ <label id="number-label"> Enter your age: <input min="7" max="14" id="number"type="number" placeholder="123-456-78" > </label>
+    </fieldset>
+  <fieldset>
+    <label>what are your drinking water supplies?
+ <select id="dropdown">
+   <option value="">(select one)</option>
+   <option value=1>River</option>
+   <option value=2>water plant</option>
+   <option value=3>water purifier</option>
+   </select>
+    </label><label>
+    How is the water quality in your locality?</label>
+   <label class="bob2">GOOD<input class="bob4" value="group" name="group" type="radio"></label>
+   <label class="bob3">BAD<input class="bob5" value="group" name="group" value type="radio"></label>
+    <label class="bob6">Are you feeling okay with your hydration?<input class="bob8" value="checkbox" type="checkbox"></label>
+   <label class="bob7">Are you having any symtoms of unhygeine?<input class="bob9" value="checkbox" type="checkbox"></label>
+  </fieldset>
+  <fieldset>
+   <label>What are your thoughts on imporvement of water facilities?<textarea></textarea></label>
+   <label><input class="sub" id="submit" type="submit"></label>
+   </fieldset>
+  </form>
+  </body>
+</html>
