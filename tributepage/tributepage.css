@@ -1,0 +1,47 @@
+#image{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+  .name,.desp{
+    text-align: center;
+    
+    
+  }
+#img-caption{
+  text-align: center;
+  font-family: cursive;
+}
+.name{
+  font-weight: bold;
+}
+img{
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 8px;
+ 
+}
+#tribute-info{
+  text-align: center;
+  font-family: system-ui;
+}
+span{
+  font-family:Fantasy;
+}
+.ingo{
+  padding: auto;
+  text-align: center;
+}
+.bye{
+  font-size: 20px;
+  font-family: cursive;
+  text-align: center;
+}
+a{
+  color: red;
+}
+.auth{
+  text-align: right;
+}
