@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="documentation.css">
+  
+</head>
+<body>
+  <h1>Python Documentation</h1>
+      <nav id="navbar">
+        <ul>
+      <header>
+        <h3>Navigation</h3>
+        </header>
+        <li> <a class="nav-link" href="#Introduction">
+          Introduction
+        </a></li>
+        <li><a class="nav-link" href="#History">
+          History
+        </a></li>
+        <li><a class="nav-link" href="#Indentation">
+          Indentation
+        </a></li>
+        <li><a class="nav-link" href="#Statements">
+          Statements
+        </a></li>
+        <li>
+        <a class="nav-link" href="#Expressions">
+          Expressions </a>
+      </li>
+          <li></li>
+        </ul>
+      </nav>
+       
+        
+        
+        
+  
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>
+        Introduction
+        </header>
+        <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
+
+Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.
+
+Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0.[36] Python 2.0 was released in 2000. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions. Python 2.7.18, released in 2020, was the last release of Python 2.
+
+Python consistently ranks as one of the most popular programming languages</p>
+        <p>Since 2003, Python has consistently ranked in the top ten most popular programming languages in the TIOBE Programming Community Index where as of December 2022 it was the most popular language (ahead of C, C++, and Java).[40] It was selected Programming Language of the Year (for "the highest rise in ratings in a year") in 2007, 2010, 2018, and 2020 (the only language to have done so four times as of 2020[177]).
+
+An empirical study found that scripting languages, such as Python, are more productive than conventional languages, such as C and Java, for programming problems involving string manipulation and search in a dictionary, and determined that memory consumption was often "better than Java and not much worse than C or C++".</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p>Python's design and philosophy have influenced many other programming languages:</p>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <li>Boo uses indentation, a similar syntax, and a similar object model</li>
+        <li>Cobra uses indentation and a similar syntax, and its Acknowledgements document lists Python first among languages that influenced it</li>
+        <li>CoffeeScript, a programming language that cross-compiles to JavaScript, has Python-inspired syntax.</li>
+        <li>Groovy was motivated by the desire to bring the Python design philosophy to Java</li>
+        <li>Nim uses indentation and similar syntax</li>
+    </section>
+    <section id="History" class="main-section">
+      <header>
+        History
+        </header>
+        <p>Python was conceived in the late 1980s[42] by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC programming language, which was inspired by SETL,[43] capable of exception handling and interfacing with the Amoeba operating system.[13] Its implementation began in December 1989.[44] Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his "permanent vacation" from his responsibilities as Python's "benevolent dictator for life", a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker.[45] In January 2019, active Python core developers elected a five-member Steering Council to lead the project.[46][47]
+
+
+
+</p>
+        <p>Python 2.0 was released on 16 October 2000, with many major new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support.[48] Python 3.0, released on 3 December 2008, with many of its major features backported to Python 2.6.x[49] and 2.7.x. Releases of Python 3 include the 2to3 utility, which automates the translation of Python 2 code to Python 3.[50]</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        
+        <p>Python 2.7's end-of-life was initially set for 2015, then postponed to 2020 out of concern that a large body of existing code could not easily be forward-ported to Python 3.[51][52] No further security patches or other improvements will be released for it.[53][54] Currently only 3.7 and later are supported. In 2021, Python 3.9.2 and 3.8.8 were expedited[55] as all versions of Python (including 2.7[56]) had security issues leading to possible remote code execution[57] and web cache poisoning.[58]</p>
+        <p>In 2022, Python 3.10.4 and 3.9.12 were expedited[59] and 3.8.13, and 3.7.13, because of many security issues.[60] When Python 3.9.13 was released in May 2022, it was announced that the 3.9 series (joining the older series 3.8 and 3.7) would only receive security fixes in the future.[61] On September 7, 2022, four new releases were made due to a potential denial-of-service attack: 3.10.7, 3.9.14, 3.8.14, and 3.7.14.[62][63]</p>
+        <p>As of November 2022, Python 3.11.0 is the current stable release. Notable changes from 3.10 include increased program execution speed and improved error reporting</p>
+      <p>Its core philosophy is summarized in the document The Zen of Python (PEP 20), which includes aphorisms such as:</p>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <li>Beautiful is better than ugly.</li>
+        <li>Explicit is better than implicit.</li>
+        <li>Simple is better than complex.</li>
+        <li>Complex is better than complicated.</li>
+        <li>Readability counts.</li>
+    </section>
+    <section id="Indentation" class="main-section">
+      <header>
+        Indentation
+        </header>
+        <p>Python uses whitespace indentation, rather than curly brackets or keywords, to delimit blocks. An increase in indentation comes after certain statements; a decrease in indentation signifies the end of the current block.[82] Thus, the program's visual structure accurately represents its semantic structure.[83] This feature is sometimes termed the off-side rule. Some other languages use indentation this way; but in most, indentation has no semantic meaning. The recommended indent size is four spaces.</p>
+        <p>Python is meant to be an easily readable language. Its formatting is visually uncluttered and often uses English keywords where other languages use punctuation. Unlike many other languages, it does not use curly brackets to delimit blocks, and semicolons after statements are allowed but rarely used. It has fewer syntactic exceptions and special cases than C or Pascal.</p>
+        <p>Python strives for a simpler, less-cluttered syntax and grammar while giving developers a choice in their coding methodology. In contrast to Perl's "there is more than one way to do it" motto, Python embraces a "there should be one—and preferably only one—obvious way to do it" philosophy.[73] Alex Martelli, a Fellow at the Python Software Foundation and Python book author, wrote: "To describe something as 'clever' is not considered a compliment in the Python culture."</p>
+        <p>Python's developers strive to avoid premature optimization and reject patches to non-critical parts of the CPython reference implementation that would offer marginal increases in speed at the cost of clarity.[75] When speed is important, a Python programmer can move time-critical functions to extension modules written in languages such as C; or use PyPy, a just-in-time compiler. Cython is also available, which translates a Python script into C and makes direct C-level API calls into the Python interpreter.</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p>Python's developers aim for it to be fun to use. This is reflected in its name—a tribute to the British comedy group Monty Python[76]—and in occasionally playful approaches to tutorials and reference materials, such as the use of the terms "spam" and "eggs" (a reference to a Monty Python sketch) in examples, instead of the often-used "foo" and "bar"</p>
+        <p>A common neologism in the Python community is pythonic, which has a wide range of meanings related to program style. "Pythonic" code may use Python idioms well, be natural or show fluency in the language, or conform with Python's minimalist philosophy and emphasis on readability. Code that is difficult to understand or reads like a rough transcription from another programming language is called unpythonic.</p>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <li>PyPy is a fast, compliant interpreter of Python 2.7 and 3.8.[133][134] Its just-in-time compiler often brings a significant speed improvement over CPython but some libraries written in C cannot be used with it</li>
+        <li>Stackless Python is a significant fork of CPython that implements microthreads; it does not use the call stack in the same way, thus allowing massively concurrent programs. PyPy also has a stackless version.</li>
+        <li>MicroPython and CircuitPython are Python 3 variants optimized for microcontrollers, including Lego Mindstorms EV3.[</li>
+        <li>Pyston is a variant of the Python runtime that uses just-in-time compilation to speed up the execution of Python programs</li>
+        <li>Cinder is a performance-oriented fork of CPython 3.8 that contains a number of optimizations including bytecode inline caching, eager evaluation of coroutines, a method-at-a-time JIT, and an experimental bytecode compiler</li>
+    </section>
+   <section id="Statements" class="main-section">
+      <header>
+        Statements
+        </header>
+        <p>The assignment statement (=) binds a name as a reference to a separate, dynamically allocated object. Variables may subsequently be rebound at any time to any object. In Python, a variable name is a generic reference holder without a fixed data type; however, it always refers to some object with a type. This is called dynamic typing—in contrast to statically-typed languages, where each variable may contain only a value of a certain type.</p>
+        <p>Python does not support tail call optimization or first-class continuations, and, according to Van Rossum, it never will.[87][88] However, better support for coroutine-like functionality is provided by extending Python's generators.[89] Before 2.5, generators were lazy iterators; data was passed unidirectionally out of the generator. From Python 2.5 on, it is possible to pass data back into a generator function; and from version 3.3, it can be passed through multiple stack levels.[90]</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p>Python's statements include:</p>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <li>The assignment statement, using a single equals sign =</li>
+        <li>The if statement, which conditionally executes a block of code, along with else and elif (a contraction of else-if)</li>
+        <li>The for statement, which iterates over an iterable object, capturing each element to a local variable for use by the attached block</li>
+        <li>The while statement, which executes a block of code as long as its condition is true</li>
+        <li>The try statement, which allows exceptions raised in its attached code block to be caught and handled by except clauses (or new syntax except* in Python 3.11 for exception groups[85]); it also ensures that clean-up code in a finally block is always run regardless of how the block exits</li>
+    </section>
+  <section id="Expressions" class="main-section">
+      <header>
+        Expressions
+        </header>
+        <p>Statements cannot be a part of an expression—so list and other comprehensions or lambda expressions, all being expressions, cannot contain statements. A particular case is that an assignment statement such as a = 1 cannot form part of the conditional expression of a conditional statement. This has the advantage of avoiding a classic C error of mistaking an assignment operator = for an equality operator == in conditions: if (c = 1) { ... } is syntactically valid (but probably unintended) C code, but if c = 1: ... causes a syntax error in Python.</p>
+        <p>Python has array index and array slicing expressions in lists, denoted as a[key], a[start:stop] or a[start:stop:step]. Indexes are zero-based, and negative indexes are relative to the end. Slices take elements from the start index up to, but not including, the stop index. The third slice parameter called step or stride, allows elements to be skipped and reversed. Slice indexes may be omitted—for example, a[:] returns a copy of the entire list. Each element of a slice is a shallow copy.</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p>Python has a "string format" operator % that functions analogously to printf format strings in C—e.g. "spam=%s eggs=%d" % ("blah", 2) evaluates to "spam=blah eggs=2". In Python 2.6+ and 3+, this was supplemented by the format() method of the str class, e.g. "spam={0} eggs={1}".format("blah", 2). Python 3.6 added "f-strings": spam = "blah"; eggs = 2; f'spam={spam} eggs={eggs}'.[98]</p>
+        <p>Python makes a distinction between lists and tuples. Lists are written as [1, 2, 3], are mutable, and cannot be used as the keys of dictionaries (dictionary keys must be immutable in Python). Tuples, written as (1, 2, 3), are immutable and thus can be used as keys of dictionaries, provided all of the tuple's elements are immutable. The + operator can be used to concatenate two tuples, which does not directly modify their contents, but produces a new tuple containing the elements of both. Thus, given the variable t initially equal to (1, 2, 3), executing t = t + (4, 5) first evaluates t + (4, 5), which yields (1, 2, 3, 4, 5), which is then assigned back to t—thereby effectively "modifying the contents" of t while conforming to the immutable nature of tuple objects. Parentheses are optional for tuples in unambiguous contexts.[96]</p>
+        <p>Python features sequence unpacking where multiple expressions, each evaluating to anything that can be assigned (to a variable, writable property, etc.) are associated in an identical manner to that forming tuple literals—and, as a whole, are put on the left-hand side of the equal sign in an assignment statement. The statement expects an iterable object on the right-hand side of the equal sign that produces the same number of values as the provided writable expressions; when iterated through them, it assigns each of the produced values to the corresponding expression on the left.[97]</p>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <li>The +, -, and * operators for mathematical addition, subtraction, and multiplication are similar to other languages, but the behavior of division differs. There are two types of divisions in Python: floor division (or integer division) // and floating-point/division.[91] Python uses the ** operator for exponentiation.</li>
+        <li>Python uses the + operator for string concatenation. Python uses the * operator for duplicating a string a specified number of times.
+The @ infix operator. It is intended to be used by libraries such as NumPy for matrix multiplication.[92][93]</li>
+        <li>The syntax :=, called the "walrus operator", was introduced in Python 3.8. It assigns values to variables as part of a larger expression.[94]</li>
+        <li>Python uses and, or, and not as boolean operators.</li>
+        <li>Python has a type of expression called a list comprehension, as well as a more general expression called a generator expression.[71]</li>
+    </section>
+
+    </main>
+
+</body>
+</html>
