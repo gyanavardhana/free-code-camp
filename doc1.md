@@ -1,87 +1,78 @@
-## Hardware Components and Pin Configuration
 
-**LCD Display (LiquidCrystal)**
-- Pins: 6, 7, 5, 4, 3, 2
-- Purpose: To display status messages and detection results
+# Lit Components MCP Integration Project Plan
 
-**GSM Module (SoftwareSerial)**
-- Pins: 8 (RX), 9 (TX)
-- Purpose: Sends SMS alerts when weapons are detected
+## Project Overview
 
-**Motor Control**
-- Pin 11 (m1a): Motor terminal A
-- Pin 10 (m1b): Motor terminal B
-- Purpose: Controls physical movement/barrier when weapon detected
+This project aims to build a system that:
+- Manages Lit components via a backend API
+- Stores component data in a MongoDB database
+- Integrates with an MCP server
+- Connects with AI tools like Claude and Cursor for intelligent discovery
 
-**Other Components**
-- Pin 12 (relay): Controls high-voltage components
-- Pin 13 (buzzer): Audio alert when weapon is detected
+---
 
-## Global Variables
+## System Architecture
 
-- `inputString` and `inputString1`: Store incoming serial data
-- `stringComplete` and `stringComplete1`: Flags indicating complete messages
-- `rcv` and `pastnumber`: For GSM communication (stores phone number)
-- `sts1`: Status counter for detection events
+**Core Components:**
+- GitHub Repository (source of Lit components)  
+- Component Parser (extracts metadata)  
+- MongoDB (component storage)  
+- Express.js API (management layer)  
+- MCP Integration Layer  
+- Claude/Cursor Interface
+- ![image](https://github.com/user-attachments/assets/54cd62d1-b21a-43a4-9ec8-08cd73574211)
 
-## Main Functions
+---
 
-### `setup()`
-- Initializes all pins (motors, relay, buzzer)
-- Sets initial states (all outputs LOW, buzzer HIGH which is off)
-- Configures Serial communication (9600 baud)
-- Displays startup messages on LCD about "Weapon Detection Using Artificial Intelligence and Deep Learning"
+## Phase 1: Component Storage
 
-### `loop()`
-- Continuously checks for complete messages from the serial port
-- When messages are complete:
-  - If message is "GUN":
-    1. Shows "Weapon Detected" on LCD
-    2. Activates relay (HIGH)
-    3. Sounds buzzer (LOW)
-    4. Runs motor briefly to operate barrier mechanism (400ms)
-    5. Waits 3 seconds
-    6. Turns off relay
-    7. Stops buzzer
-    8. Sends SMS alert to registered number
-  - If message is "None":
-    1. Displays "None" on LCD (no weapon detected)
+### Key Goals:
+- Design a schema for Lit component metadata
+- Store source code, properties, events, and tags
+- Support full-text and tag-based search
+- Implement utility functions for CRUD operations
 
-### `serialEvent()`
-- Handles incoming serial data
-- Parses messages between special characters (* and #)
-- Populates both `inputString` and `inputString1` based on incoming data
+---
 
-### `readSerial()`
-- Reads data from GSM module
-- Processes line ending characters
+## Phase 2: Component Management API
 
-### `gsminit()`
-- Initializes GSM module with AT commands
-- Sets up text messaging mode
-- Registers a mobile number for alerts
-- Sends confirmation SMS
+### Key Goals:
+- Set up Express.js server with routes for component management
+- Create API endpoints for:
+  - Creating, reading, updating, and deleting components
+  - Searching and filtering components
+  - Managing component dependencies
+- Integrate with the parser service for metadata extraction from code
 
-### `okcheck1()`
-- Helper function to wait for "OK" confirmation from GSM module
+---
 
-## Workflow Explanation
+## Phase 3: MCP Server Integration
 
-1. **System Initialization**:
-   - Setup pins, communication, display welcome message
-   
-2. **Detection Loop**:
-   - System continuously monitors serial input (from a connected detection system)
-   - The detection results come in via serial with format `*RESULT#`
+### Key Goals:
+- Develop a client service to communicate with the MCP API
+- Transform stored components to MCP’s expected format
+- Register components and track status
+- Implement sync logic and manual trigger endpoints
 
-3. **Weapon Detection Response**:
-   - When "GUN" is detected:
-     - Visual alert on LCD
-     - Sound alert via buzzer
-     - Physical response via motor movement
-     - SMS notification to registered number
+---
 
-4. **String Parsing Logic**:
-   - Messages are parsed between * and # characters
-   - This suggests the system receives messages like "*GUN#" or "*None#"
-   - There's also a second string parser for additional information that may display on LCD
+## Phase 4: Claude/Cursor Integration
+
+### Key Goals:
+- Build AI-friendly endpoints to support component lookup
+- Parse natural language queries and match with components
+- Format results with code snippets and documentation
+- Provide AI tools with ranked and filtered suggestions
+
+---
+
+## Development Environment
+
+**Setup:**
+- Use Node.js, Express.js, MongoDB, Git, and a code editor
+- Maintain separate configs for development and production
+- Follow best practices (linting, testing, version control)
+
+---
+
+]
