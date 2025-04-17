@@ -1,6 +1,9 @@
 
 # Lit Components MCP Integration Project Plan
 
+# Resources referred:
+https://modelcontextprotocol.io/introduction
+
 ## Project Overview
 
 This project aims to build a system that:
